@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c2cd97bceb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pagina Responsive</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <img src="https://seeklogo.com/images/A/asian-kung-fu-generation-logo-9E03F95944-seeklogo.com.png"
+                alt="Logo de Asian Kung-Fu Generation" style="width: 80px;">
+            <h1>Asian Kung-Fu Generation</h1>
+            <p>Descubre la historia y la música de una de las bandas más influyentes de Japón.</p>
+        </header>
+        <div class="main" style="margin-bottom: 400px;">
+            <h2>Asian Kung-Fu Generation: Una Breve Introducción</h2>
+            <p>Asian Kung-Fu Generation es una banda de rock alternativo japonesa formada en 1996 en Yokohama. Conocidos
+                por su estilo enérgico y letras introspectivas, la banda ha ganado una sólida base de seguidores tanto
+                en Japón como internacionalmente.</p>
+
+            <p>Su sonido distintivo combina elementos de rock, punk y emociones crudas, creando una experiencia auditiva
+                única que resuena con personas de diversas culturas y generaciones. A lo largo de su carrera, Asian
+                Kung-Fu Generation ha lanzado varios álbumes aclamados por la crítica y sencillos exitosos,
+                estableciéndose como una de las bandas más influyentes en la escena musical japonesa.</p>
+
+            <p>Con letras que exploran temas como la juventud, la identidad y la búsqueda de significado, las canciones
+                de Asian Kung-Fu Generation tienen el poder de conectar con la audiencia a un nivel emocional profundo.
+                Su habilidad para combinar letras introspectivas con melodías pegajosas les ha valido el reconocimiento
+                y el cariño de fans de todo el mundo.</p>
+
+            <img src="https://lh3.googleusercontent.com/kevWkp3vql9vJHrLcwinpWY13F_DWGYmwJKFzS1oDI9dwXtjHRyR4nckxjkew0BYkbKYOzy_43TWyw=w2880-h1200-p-l90-rj"
+                alt="Imagen de Asian Kung-Fu Generation" style="width: 100%; max-width: 2000px;">
+        </div>
+
+
+
+        <div class="side side-left"><img src="#" alt="Imagen 1"></div>
+        <div class="side side-right"><img src="#" alt="Imagen 2"></div>
+
+
+
+
+        <footer class="footer">
+            <section class="clientes">
+                <h1 id="h1">CRUD Fanaticos</h1>
+                <div>
+                    <h2>Administrar Fanaticos</h2>
+                    <form id="userForm">
+                        <label for="username">Fanatico:</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <input type="hidden" name="id" id="id">
+                        <button type="submit" id="btn-save-fanatico">Add Fanatico</button>
+                    </form>
+                </div>
+                <div>
+                    <h2>Listado de Fanaticos</h2>
+                    <ul id="userList"></ul>
+                    <table id="list-fanaticos" class="table">
+                        <thead>
+                            <tr>
+                                <th>Fanatico</th>
+                                <th>Email</th>
+                                <th>Password</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-fanaticos">
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</body>
+
+</html>
